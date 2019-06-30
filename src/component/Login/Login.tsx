@@ -5,10 +5,6 @@ import GoogleIco from '../../img/social/google.png';
 
 const Login: React.FC = () => {
 
-    const FacebookBtnStyle = {
-        background: `url('../../img/social/facebook.png')`
-    }
-
     const Container = styled.div`
         width: 400px;
         height: 500px;

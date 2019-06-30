@@ -1,13 +1,14 @@
 import React from 'react';
 import { useState } from 'react';
 import './App.css';
+import styled from 'styled-components';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Dashboard from './component/Dashboard'
 import PrivateMainContent from './component/PrivateContent/PrivateMainContent';
 import PublicMainContent from './component/PublicContent/PublicMainContent';
 import AboutPage from './component/AboutPage/aboutContent';
 import Login from './component/Login/Login';
-import styled from 'styled-components';
+import AddProject from './component/Projects/AddProject';
 
 
 const App: React.FC = () => {
@@ -33,6 +34,7 @@ const App: React.FC = () => {
         )}
         <Route path='/about' component={AboutPage}></Route>
         <Route path='/login' component={Login}></Route>
+        <Route path='/addproject' component={AddProject}></Route>
       </Router>
     </Container>
   );

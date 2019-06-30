@@ -54,6 +54,12 @@ const Dashboard: React.FC = () => {
             <MenuLinks onClick={setMenu}>
                 <NavLink activeStyle={Active} style={NavLinkStyle} to='login'>Login</NavLink>
             </MenuLinks>
+            <MenuLinks onClick={setMenu}>
+                <NavLink activeStyle={Active} style={NavLinkStyle} to='addproject'>Add project</NavLink>
+            </MenuLinks>
+            <MenuLinks onClick={setMenu}>
+                <NavLink style={NavLinkStyle} to='/'>Start</NavLink>
+            </MenuLinks>
         </Menu>
     )
 }
